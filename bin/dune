@@ -1,0 +1,4 @@
+(executable
+ (public_name sol)
+ (name main)
+ (libraries AOC_2024))
