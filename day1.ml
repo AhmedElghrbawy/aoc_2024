@@ -5,9 +5,7 @@ let read_lines fname =
     close_in ic;
     lines
   with e ->
-    (* some unexpected exception occurs *)
     close_in_noerr ic;
-    (* emergency closing *)
     raise e
 
 let rec build_lists acc lines =
